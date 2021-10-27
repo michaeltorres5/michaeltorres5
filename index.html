@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2022.44">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;title&gt; This is my homepage!! &lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;script src="https://cdn.jsdelivr.net/npm/vega@5"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;script src="https://cdn.jsdelivr.net/npm/vega-lite@5"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;script src="https://cdn.jsdelivr.net/npm/vega-embed@6"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/head&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Lorem Ipsum Dolor set et</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Lorem Ipsum Dolor set et x2<span class="Apple-converted-space">   </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="myviz"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const mySpec={</p>
+<p class="p1"><span class="Apple-converted-space">  </span>"$schema": "https://vega.github.io/schema/vega-lite/v5.json",</p>
+<p class="p1"><span class="Apple-converted-space">  </span>"data": {"url":"https://raw.githubusercontent.com/michaeltorres16/michaeltorres16/main/building_inventory.csv"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>"title": "Mean of Sq. Footage by Building Usage",</p>
+<p class="p1"><span class="Apple-converted-space">  </span>"mark": "bar",</p>
+<p class="p1"><span class="Apple-converted-space">  </span>"encoding": {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>"x": {"field": "Usage Description", "type": "ordinal","sort":"-y","axis":{"labelAngle":-50}},</p>
+<p class="p1"><span class="Apple-converted-space">    </span>"y": {"aggregate": "mean", "field": "Square Footage"}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>vegaEmbed('#myviz',mySpec);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
